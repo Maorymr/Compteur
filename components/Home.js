@@ -19,6 +19,8 @@ function Counter() {
   return (
     <div className={styles.counter}>
       <h1>Compteur: {count}</h1>
+      <button className={styles.button} onClick={() => decrement(1000000)}>+1000000</button>
+      <button className={styles.button} onClick={() => decrement(100000)}>+100000</button>
       <button className={styles.button} onClick={() => decrement(10000)}>-10000</button>
       <button className={styles.button} onClick={() => decrement(1000)}>-1000</button>
       <button className={styles.button} onClick={() => decrement(100)}>-100</button>
@@ -30,6 +32,8 @@ function Counter() {
       <button className={styles.button} onClick={() => increment(100)}>+100</button>
       <button className={styles.button} onClick={() => increment(1000)}>+1000</button>
       <button className={styles.button} onClick={() => increment(10000)}>+10000</button>
+      <button className={styles.button} onClick={() => increment(100000)}>+100000</button>
+      <button className={styles.button} onClick={() => increment(1000000)}>+1000000</button>
     </div>
   );
 }
